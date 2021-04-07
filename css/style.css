@@ -1,0 +1,272 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #19202C;
+;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  fill: #19202C;
+}
+
+/* стилизация aria-label */
+[aria-label] {
+  position: relative;
+}
+
+[aria-label]:after {
+  content: attr(aria-label);
+  visibility: hidden;
+  position: absolute;
+  top: 200%;
+  margin-left: -60px;
+  padding: 10px 8px;
+  background-color: rgba(85, 85, 85, .7);
+  white-space: nowrap;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+[aria-label]:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* header */
+
+.main__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 30px 70px 30px 32px;
+}
+.menu-btn {
+  margin-right: 28px;
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 43%;
+  width: 100%;
+  margin-left: 59px;
+  margin-right: auto;
+  background-color: rgba(235, 235, 235, .3);
+  border-radius: 22px;
+}
+.search-form__input {
+  width: 100%;
+  padding: 12px 23px;
+  background-color: transparent;
+  border: none;
+}
+.search-form__input::placeholder {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #19202C;
+}
+.search-form__btn {
+  margin-right: 17px;
+  line-height: 1;
+}
+.icon-box__btn:not(:first-child) {
+  position: relative;
+  margin-left: 50px;
+}
+.icon-box__btn:last-child::before {
+  content: "3";
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  min-width: 18px;
+  min-height: 18px;
+  padding: 2px 6px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+.icon-box__icon {
+  fill: rgba(0, 0, 0, .24);
+}
+.user__btn {
+  max-width: 40px;
+  min-height: 40px;
+  margin-left: 45px;
+}
+.user__img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+/* /header */
+
+/* main */
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.75em;
+  padding: 0 30px 40px 32px;
+}
+
+/* aside */
+
+.navbox--side {
+  max-width: 12%;
+  width: 100%;
+}
+.main-navigation__list {
+  margin-bottom: 32px;
+}
+.main-navigation__item,
+.main-navigation__btn,
+.navbox__item {
+  color: #898989;
+  transition: color .3s ease-in-out;
+}
+.main-navigation__item:hover,
+.main-navigation__btn:hover,
+.navbox__item:hover {
+  color: #ff0000;
+}
+.main-navigation__item:focus,
+.main-navigation__btn:focus,
+.navbox__item:focus {
+  color: #ff0000;
+}
+.main-navigation__link,
+.main-navigation__btn,
+.navbox__link {
+  display: flex;
+  align-items: center;
+  padding: 14px 14px 14px 0;
+}
+.navbox__list {
+  margin-bottom: 107px;
+}
+.navbox__title {
+  margin-bottom: 30px;
+  padding-top: 26px;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.navbox-icon {
+  margin-right: 15px;
+  fill: #898989;
+  transition: fill .3s ease-in-out;
+}
+.main-navigation__item:hover .navbox-icon {
+  fill: #ff0000;
+}
+.main-navigation__item:focus .navbox-icon {
+  fill: #ff0000;
+}
+.navbox-img {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  transform: translateX(-10px);
+}
+.navbox__text {
+  display: inline-block;
+}
+.navbox__btn {
+  display: flex;
+  align-items: center;
+  padding: 14px 14px 14px 0;
+  color: #898989;
+  transform: translateX(-10px);
+}
+
+/* /aside */
+/* content */
+
+.content {
+  max-width: calc(1858px - 12%);
+  width: 100%;
+}
+
+/* стилизация всплывающего окна */
+/* .icon-box__btn,
+.search-form__btn {
+  position: relative;
+}
+.icon-box__btn .tooltiptext,
+.search-form__btn .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  top: 200%;
+  margin-left: -60px;
+  padding: 10px 8px;
+  background-color: rgba(85, 85, 85, .7);
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.icon-box__btn:hover .tooltiptext,
+.search-form__btn:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+} */
