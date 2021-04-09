@@ -239,6 +239,9 @@ p {
   fill: #898989;
   transition: fill .3s ease-in-out;
 }
+.navbox__btn:hover .navbox-icon {
+  fill: #ff0000;
+}
 .main-navigation__item:hover .navbox-icon {
   fill: #ff0000;
 }
@@ -255,10 +258,13 @@ p {
 .navbox__text {
   display: inline-block;
 }
+.navbox__btn:hover .navbox-text {
+  color: #ff0000;
+}
 .navbox__btn {
   display: flex;
   align-items: center;
-  padding: 14px 14px 60px 0;
+  padding: 14px 14px 50px 0;
   color: #898989;
 }
 
