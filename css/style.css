@@ -96,7 +96,7 @@ p {
   align-items: center;
   width: 100%;
   margin-bottom: 6px;
-  padding: 30px 70px 30px 32px;
+  padding: 30px 70px 10px 32px;
   background-color: #fff;
   z-index: 10;
 }
