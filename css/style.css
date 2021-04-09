@@ -151,6 +151,9 @@ p {
 .icon-box__icon {
   fill: rgba(0, 0, 0, .24);
 }
+.icon-box__icon:hover {
+  fill: #ff0000;
+}
 .user__btn {
   max-width: 40px;
   min-height: 40px;
@@ -270,7 +273,9 @@ p {
 
 /* channel */
 
-.channel {
+.channel,
+.recommended,
+.food {
   max-width: 95%;
   margin-bottom: 50px;
 }
@@ -362,16 +367,22 @@ p {
 
 /* Slider */
 
-.channel__slider {
+.channel__slider,
+.r__slider,
+.food__slider {
   position: relative;
 }
-.channel__slider-item {
+.channel__slider-item,
+.r__slider-item-inner,
+.food__slider-item {
   margin: 0 10px;
 }
 .item-content {
   padding: 0 10px 0 0;
 }
-.slick-arrow {
+.channel__slider .arrow,
+.r__slider .r-arrow,
+.food__slider .f-arrow {
   position: absolute;
   top: -56px;
   right: 14px;
@@ -379,7 +390,7 @@ p {
   height: 28px;
   font-size: 0;
   background-color: #cccccc;
-  background-image: url("../images/prev.svg");
+  background-image: url("../images/next.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -387,36 +398,28 @@ p {
   cursor: pointer;
   z-index: 1;
 }
-.slick-next {
+.channel__slider .prev,
+.r__slider .r-prev,
+.food__slider .f-prev {
   margin-left: 10px;
-  background-image: url("../images/next.svg");
+  background-image: url("../images/prev.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.slick-prev {
+.channel__slider .prev,
+.r__slider .r-prev,
+.food__slider .f-prev {
   right: 52px;
 }
 
 /* recommended */
 
-.r__slider {
-  position: relative;
-}
-.r__slider-item {
-  max-width: 540px;
-  margin-right: 10px;
-}
 .r__item-video {
+  position: relative;
   max-width: 540px;
   min-height: 305px;
-}
-.r__item-video-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+  margin-bottom: 10px;
+  background-color: #19202C;
 }
 .r-author {
   display: flex;
@@ -432,29 +435,3 @@ p {
   font-size: 0.81rem;
   color: #c2c2c2;
 }
-/* стилизация всплывающего окна */
-/* .icon-box__btn,
-.search-form__btn {
-  position: relative;
-}
-.icon-box__btn .tooltiptext,
-.search-form__btn .tooltiptext {
-  visibility: hidden;
-  position: absolute;
-  top: 200%;
-  margin-left: -60px;
-  padding: 10px 8px;
-  background-color: rgba(85, 85, 85, .7);
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.icon-box__btn:hover .tooltiptext,
-.search-form__btn:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-} */
