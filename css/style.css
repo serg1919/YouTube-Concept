@@ -104,7 +104,7 @@ p {
   margin-right: 70px;
 }
 .logo {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 .search-form {
   display: flex;
@@ -180,11 +180,19 @@ p {
   padding: 134px 30px 40px 32px;
 }
 
+/* mobile menu */
+
+.mobile {
+  display: none;
+}
+
+/* /mobile menu */
+
 /* aside */
 
 .navbox--side {
   position: fixed;
-  max-width: 11%;
+  max-width: 220px;
   width: 100%;
   height: calc(100% - 104px);
   overflow-y: auto;
@@ -281,7 +289,6 @@ p {
 
 .content {
   max-width: calc(1858px - 14%);
-  width: 100%;
   margin-left: 14%;
 }
 
@@ -290,14 +297,13 @@ p {
 .channel,
 .recommended,
 .food {
-  max-width: 95%;
   margin-bottom: 50px;
 }
 .channel__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 17%;
+  max-width: 250px;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -385,11 +391,12 @@ p {
 .r__slider,
 .food__slider {
   position: relative;
+  width: 100%;
 }
 .channel__slider-item,
-.r__slider-item-inner,
+.r__slider-item,
 .food__slider-item {
-  margin: 0 10px;
+  margin: 0 0.2%;
 }
 .item-content {
   padding: 0 10px 0 0;
@@ -398,6 +405,7 @@ p {
 .r__slider .r-arrow,
 .food__slider .f-arrow {
   position: absolute;
+  display: inline-block;
   top: -56px;
   right: 14px;
   width: 28px;
@@ -440,7 +448,7 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.r-item-content__author {
+.item-content__author {
   max-width: 250px;
   width: 100%;
 }
@@ -452,6 +460,18 @@ p {
 
 
 /* media */
+
+@media screen and (max-width: 1650px) {
+  .navbox--side {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .channel {
+    max-width: 100%;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .icon-box {
@@ -470,9 +490,20 @@ p {
   .menu-btn {
     margin-right: 40px;
   }
+  .r__item-video,
+  .food__item-video {
+    max-width: 100%;
+    height: auto;
+  }
+  .item-content__author {
+    max-width: 100%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 651px) {
+  .main__content {
+    padding: 134px 15px 40px 16px;
+  }
   .main__header {
     padding-right: 30px;
   }
@@ -482,11 +513,64 @@ p {
   .menu-btn {
     display: none;
   }
+  .item-video {
+    max-width: 100%;
+    height: 100%;
+  }
+  .item-content {
+    padding: 0;
+  }
+  .mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    background-color: #fff;
+    border-top: 1px solid #f1f1f1;
+    z-index: 5;
+  }
+  .mobile-navigation__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+    font-size: 0.625rem;
+    transition: color .3s ease-in-out;
+  }
+  .mobile-navigation__link:hover {
+    color: #ff0000;
+  }
+  .mobile-navigation__link:hover .navbox-icon {
+    fill: #ff0000;
+  }
+  .mobile-navigation__link:focus {
+    color: #ff0000;
+  }
+  .mobile-navigation__link:focus .navbox-icon {
+    fill: #ff0000;
+  }
+  .mobile-navigation__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbox-icon {
+    margin-right: 0;
+    transition: fill .3s ease-in-out;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .main__content {
+    padding: 134px 5px 40px 6px;
+  }
   .search-form {
     transform: translateX(200%);
+    opacity: 0;
   }
   .search-form__btn {
     display: none;
@@ -501,9 +585,19 @@ p {
     transform: unset;
     max-width: 100%;
     margin-right: 15px;
+    opacity: 1;
   }
   .user__btn {
     margin-left: 0;
+  }
+  .channel__title {
+    font-size: 1.375rem;
+  }
+  .r-item-video__img,
+  .food-item-video__img,
+  .r__item-video,
+  .food__item-video {
+    min-height: 244px;
   }
 }
 
@@ -512,13 +606,22 @@ p {
     padding-right: 15px;
     padding-left: 15px;
   }
-  /* .search-form--active  {
-    transform: unset;
-    max-width: 100%;
-    margin-right: 15px;
-  } */
   .logo--active {
     position: absolute;
     opacity: 0;
+  }
+}
+@media screen and (max-width: 376px) {
+  .r-item-video__img,
+  .food-item-video__img,
+  .r__item-video,
+  .food__item-video {
+    min-height: 183px;
+  }
+  .mobile-navigation__text {
+    display: none;
+  }
+  .mobile-navigation__link {
+    min-height: 20px;
   }
 }

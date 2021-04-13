@@ -64,8 +64,52 @@
   <!-- MAIN -->
 
   <main class="main main__content">
+
     <!-- ASIDE -->
-    <!--<aside class="navbox navbox--side">
+
+    <!-- Mobile menu -->
+
+    <section class="mobile">
+      <h2 class="visually-hidden">Мобильное меню</h2>
+      <nav class="mobile-navigation">
+        <ul class="mobile-navigation__list">
+          <li class="mobile-navigation__item" title="Главная">
+            <a class="mobile-navigation__link" href="#">
+              <svg class="icon navbox-icon" width="20" height="19">
+                <use xlink:href="images/icons.svg#home"></use>
+              </svg>
+              <span class="mobile-navigation__text">Главная</span>
+            </a>
+          </li>
+          <li class="mobile-navigation__item" title="В тренде">
+            <a class="mobile-navigation__link" href="#">
+              <svg class="icon navbox-icon" width="20" height="21">
+                <use xlink:href="images/icons.svg#trending"></use>
+              </svg>
+              <span class="mobile-navigation__text">В тренде</span>
+            </a>
+          </li>
+          <li class="mobile-navigation__item" title="Подписки">
+            <a class="mobile-navigation__link" href="#">
+              <svg class="icon navbox-icon" width="20" height="18">
+                <use xlink:href="images/icons.svg#subscriptions"></use>
+              </svg>
+              <span class="mobile-navigation__text">Подписки</span>
+            </a>
+          </li>
+          <li class="mobile-navigation__item" title="Библиотека">
+            <a class="mobile-navigation__link" href="#">
+              <svg class="icon navbox-icon" width="20" height="16">
+                <use xlink:href="images/icons.svg#library"></use>
+              </svg>
+              <span class="mobile-navigation__text">Библиотека</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <aside class="navbox navbox--side">
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item" title="Главная">
@@ -205,11 +249,11 @@
         </svg>
         <span class="navbox-text">Настройки</span>
       </button>
-    </aside>-->
+    </aside>
 
     <!--  CONTENT -->
 
-    <!--<section class="content">
+    <section class="content">
       <h2 class="visually-hidden">Каналы</h2>
       <article class="channel">
         <h3 class="visually-hidden">Подписки</h3>
@@ -218,208 +262,45 @@
           <h4 class="channel__title-text">Glo Academy</h4>
         </div>
         <div class="channel__slider">
-          <div class="channel__slider-item">
-            <div class="item-video">
-              <a class="item-video__link" href="https://www.youtube.com/watch?v=uIAWzsDxiko&t=3416s" target="_blank">
-                <picture>
-                  <source srcset="https://i.ytimg.com/vi_webp/uIAWzsDxiko/maxresdefault.webp" type="image/webp">
-                  <img class="item-video__img" src="https://i.ytimg.com/vi/uIAWzsDxiko/maxresdefault.jpg"
-                    alt="Пошаговый план разработки сайтов в 2021 году">
-                </picture>
-              </a>
-              <button class="item-video__btn" aria-label="Запустить видео">
-                <svg viewBox="0 0 576 512" id="youtube">
-                  <path class="btn-shape"
-                    d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
-                  <path class="btn-icon"
-                    d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
-                </svg>
-              </button>
-              <span class="item-video__time">1:33:48</span>
-            </div>
-            <div class="item-content">
-              <a class="item-content__link" href="https://www.youtube.com/watch?v=uIAWzsDxiko&t=3416s"
-                title="Пошаговый план разработки сайтов в 2021 году" target="_blank">
-                <h3 class="item-content__title">Пошаговый план разработки сайтов в 2021 году</h3>
-              </a>
-              <p class="item-content__author">
-                <span>80k просмотров</span>
-                <span>3 дня назад</span>
-                <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo Academy</a>
-              </p>
-            </div>
-          </div>
-          <div class="channel__slider-item">
-            <div class="item-video">
-              <a class="item-video__link" href="https://www.youtube.com/watch?v=PvA0kziE3mE&t=467s" target="_blank">
-                <picture>
-                  <source srcset="https://i.ytimg.com/vi_webp/PvA0kziE3mE/maxresdefault.webp" type="image/webp">
-                  <img class="item-video__img" src="https://i.ytimg.com/vi/PvA0kziE3mE/maxresdefault.jpg"
-                    alt="Интенсив: верстаем Youtube. День 1 — ответы на вопросы.">
-                </picture>
-              </a>
-              <button class="item-video__btn" aria-label="Запустить видео">
-                <svg viewBox="0 0 576 512">
-                  <path class="btn-shape"
-                    d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
-                  <path class="btn-icon"
-                    d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
-                </svg>
-              </button>
-              <span class="item-video__time">1:02:43</span>
-            </div>
-            <div class="item-content">
-              <a class="item-content__link" href="https://www.youtube.com/watch?v=PvA0kziE3mE&t=467s"
-                title="Интенсив: верстаем Youtube. День 1 — ответы на вопросы.">
-                <h3 class="item-content__title">Интенсив: верстаем Youtube. День 1 — ответы на вопросы.</h3>
-              </a>
-              <p class="item-content__author">
-                <span>3 108 просмотров</span>
-                <span>2 дня назад</span>
-                <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo Academy</a>
-              </p>
-            </div>
-          </div>
-          <div class="channel__slider-item">
-            <div class="item-video">
-              <a class="item-video__link" href="https://www.youtube.com/watch?v=sPbgGs9yav8" target="_blank">
-                <picture>
-                  <source srcset="https://i.ytimg.com/vi_webp/sPbgGs9yav8/maxresdefault.webp" type="image/webp">
-                  <img class="item-video__img" src="https://i.ytimg.com/vi/sPbgGs9yav8/maxresdefault.jpg"
-                    alt="Какие заказы можно брать новичку. День 2. Интенсив">
-                </picture>
-              </a>
-              <button class="item-video__btn" aria-label="Запустить видео">
-                <svg viewBox="0 0 576 512">
-                  <path class="btn-shape"
-                    d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
-                  <path class="btn-icon"
-                    d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
-                </svg>
-              </button>
-              <span class="item-video__time">1:09:02</span>
-            </div>
-            <div class="item-content">
-              <a class="item-content__link" href="https://www.youtube.com/watch?v=sPbgGs9yav8"
-                title="Какие заказы можно брать новичку. День 2. Интенсив">
-                <h3 class="item-content__title">Какие заказы можно брать новичку. День 2. Интенсив</h3>
-              </a>
-              <p class="item-content__author">
-                <span>2k просмотров</span>
-                <span>1 день назад</span>
-                <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo Academy</a>
-              </p>
-            </div>
-          </div>
-          <div class="channel__slider-item">
-            <div class="item-video">
-              <a class="item-video__link" href="https://www.youtube.com/watch?v=5k2WutKjr2E" target="_blank">
-                <picture>
-                  <source srcset="https://i.ytimg.com/vi_webp/5k2WutKjr2E/maxresdefault.webp" type="image/webp">
-                  <img class="item-video__img" src="https://i.ytimg.com/vi/5k2WutKjr2E/maxresdefault.jpg"
-                    alt="Вводная трансляция на курсе JavaScript 18.0">
-                </picture>
-              </a>
-              <button class="item-video__btn" aria-label="Запустить видео">
-                <svg viewBox="0 0 576 512">
-                  <path class="btn-shape"
-                    d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
-                  <path class="btn-icon"
-                    d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
-                </svg>
-              </button>
-              <span class="item-video__time">1:52:29</span>
-            </div>
-            <div class="item-content">
-              <a class="item-content__link" href="https://www.youtube.com/watch?v=5k2WutKjr2E"
-                title="Вводная трансляция на курсе JavaScript 18.0">
-                <h3 class="item-content__title">Вводная трансляция на курсе JavaScript 18.0</h3>
-              </a>
-              <p class="item-content__author">
-                <span>2k просмотров</span>
-                <span>7 дней назад</span>
-                <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo Academy</a>
-              </p>
-            </div>
-          </div>
-          <div class="channel__slider-item">
-            <div class="item-video">
-              <a class="item-video__link" href="https://www.youtube.com/watch?v=LaHXXKNiD3Q" target="_blank">
-                <picture>
-                  <source srcset="https://i.ytimg.com/vi_webp/LaHXXKNiD3Q/maxresdefault.webp" type="image/webp">
-                  <img class="item-video__img" src="https://i.ytimg.com/vi/LaHXXKNiD3Q/maxresdefault.jpg"
-                    alt="Интенсив Вилберис JS. Финал. Ответы на вопросы">
-                </picture>
-              </a>
-              <button class="item-video__btn" aria-label="Запустить видео">
-                <svg viewBox="0 0 576 512">
-                  <path class="btn-shape"
-                    d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
-                  <path class="btn-icon"
-                    d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
-                </svg>
-              </button>
-              <span class="item-video__time">3:46:06</span>
-            </div>
-            <div class="item-content">
-              <a class="item-content__link" href="https://www.youtube.com/watch?v=LaHXXKNiD3Q"
-                title="Интенсив Вилберис JS. Финал. Ответы на вопросы">
-                <h3 class="item-content__title">Интенсив Вилберис JS. Финал. Ответы на вопросы</h3>
-              </a>
-              <p class="item-content__author">
-                <span>4k просмотров</span>
-                <span>11 дней назад</span>
-                <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo Academy</a>
-              </p>
-            </div>
-          </div>
-          <div class="channel__slider-item">
-            <div class="item-video">
-              <a class="item-video__link" href="https://www.youtube.com/watch?v=IjgzTFWBYHE" target="_blank">
-                <picture>
-                  <source srcset="https://i.ytimg.com/vi_webp/IjgzTFWBYHE/maxresdefault.webp" type="image/webp">
-                  <img class="item-video__img" src="https://i.ytimg.com/vi/IjgzTFWBYHE/maxresdefault.jpg"
-                    alt="Интенсив Вилберис JS. День 2. Ответы на вопросы">
-                </picture>
-              </a>
-              <button class="item-video__btn" aria-label="Запустить видео">
-                <svg viewBox="0 0 576 512">
-                  <path class="btn-shape"
-                    d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
-                  <path class="btn-icon"
-                    d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
-                </svg>
-              </button>
-              <span class="item-video__time">2:28:21</span>
-            </div>
-            <div class="item-content">
-              <a class="item-content__link" href="https://www.youtube.com/watch?v=IjgzTFWBYHE"
-                title="Интенсив Вилберис JS. День 2. Ответы на вопросы">
-                <h3 class="item-content__title">Интенсив Вилберис JS. День 2. Ответы на вопросы</h3>
-              </a>
-              <p class="item-content__author">
-                <span>4k просмотров</span>
-                <span>13 дней назад</span>
-                <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo Academy</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="recommended">
-        <h3 class="visually-hidden">Рекомендуемые</h3>
-        <div class="channel__title">
-          <h4 class="channel__title-text">Рекомендуемые</h4>
-        </div>
-        <div class="r__slider">
-          <div class="r__slider-item">
-            <div class="r__slider-item-inner">
-              <div class="item-video r__item-video">
-                <a class="item-video__link r__item-video-link" href="https://www.youtube.com/watch?v=GS96Hvrx5wU">
+            <div class="channel__slider-item">
+              <div class="item-video">
+                <a class="item-video__link" href="https://www.youtube.com/watch?v=uIAWzsDxiko&t=3416s" target="_blank">
                   <picture>
-                    <source srcset="https://i.ytimg.com/vi_webp/GS96Hvrx5wU/maxresdefault.webp" type="image/webp">
-                    <img class="item-video__img" src="https://i.ytimg.com/vi/GS96Hvrx5wU/maxresdefault.jpg"
-                      alt="Вёрстка - это просто, если...">
+                    <source srcset="https://i.ytimg.com/vi_webp/uIAWzsDxiko/maxresdefault.webp" type="image/webp">
+                    <img class="item-video__img" src="https://i.ytimg.com/vi/uIAWzsDxiko/maxresdefault.jpg"
+                      alt="Пошаговый план разработки сайтов в 2021 году">
+                  </picture>
+                </a>
+                <button class="item-video__btn" aria-label="Запустить видео">
+                  <svg viewBox="0 0 576 512" id="youtube">
+                    <path class="btn-shape"
+                      d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
+                    <path class="btn-icon"
+                      d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
+                  </svg>
+                </button>
+                <span class="item-video__time">1:33:48</span>
+              </div>
+              <div class="item-content">
+                <a class="item-content__link" href="https://www.youtube.com/watch?v=uIAWzsDxiko&t=3416s"
+                  title="Пошаговый план разработки сайтов в 2021 году" target="_blank">
+                  <h3 class="item-content__title">Пошаговый план разработки сайтов в 2021 году</h3>
+                </a>
+                <p class="item-content__author">
+                  <span>80k просмотров</span>
+                  <span>3 дня назад</span>
+                  <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo
+                    Academy</a>
+                </p>
+              </div>
+            </div>
+            <div class="channel__slider-item">
+              <div class="item-video">
+                <a class="item-video__link" href="https://www.youtube.com/watch?v=PvA0kziE3mE&t=467s" target="_blank">
+                  <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/PvA0kziE3mE/maxresdefault.webp" type="image/webp">
+                    <img class="item-video__img" src="https://i.ytimg.com/vi/PvA0kziE3mE/maxresdefault.jpg"
+                      alt="Интенсив: верстаем Youtube. День 1 — ответы на вопросы.">
                   </picture>
                 </a>
                 <button class="item-video__btn" aria-label="Запустить видео">
@@ -430,21 +311,221 @@
                       d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
                   </svg>
                 </button>
-                <span class="item-video__time">5:27</span>
+                <span class="item-video__time">1:02:43</span>
               </div>
               <div class="item-content">
-                <a class="item-content__link" href="https://www.youtube.com/watch?v=GS96Hvrx5wU"
-                  title="Вёрстка - это просто, если..." target="_blank">
-                  <h5 class="item-content__title">Вёрстка - это просто, если...</h5>
+                <a class="item-content__link" href="https://www.youtube.com/watch?v=PvA0kziE3mE&t=467s"
+                  title="Интенсив: верстаем Youtube. День 1 — ответы на вопросы.">
+                  <h3 class="item-content__title">Интенсив: верстаем Youtube. День 1—ответы на вопросы.</h3>
                 </a>
-                <div class="r-author">
-                  <p class="r-item-content__author">
-                    <span>1k просмотров</span>
-                    <span>3 месяца назад</span>
-                  </p>
+                <p class="item-content__author">
+                  <span>3 108 просмотров</span>
+                  <span>2 дня назад</span>
+                  <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo
+                    Academy</a>
+                </p>
+              </div>
+            </div>
+            <div class="channel__slider-item">
+              <div class="item-video">
+                <a class="item-video__link" href="https://www.youtube.com/watch?v=sPbgGs9yav8" target="_blank">
+                  <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/sPbgGs9yav8/maxresdefault.webp" type="image/webp">
+                    <img class="item-video__img" src="https://i.ytimg.com/vi/sPbgGs9yav8/maxresdefault.jpg"
+                      alt="Какие заказы можно брать новичку. День 2. Интенсив">
+                  </picture>
+                </a>
+                <button class="item-video__btn" aria-label="Запустить видео">
+                  <svg viewBox="0 0 576 512">
+                    <path class="btn-shape"
+                      d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
+                    <path class="btn-icon"
+                      d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
+                  </svg>
+                </button>
+                <span class="item-video__time">1:09:02</span>
+              </div>
+              <div class="item-content">
+                <a class="item-content__link" href="https://www.youtube.com/watch?v=sPbgGs9yav8"
+                  title="Какие заказы можно брать новичку. День 2. Интенсив">
+                  <h3 class="item-content__title">Какие заказы можно брать новичку. День 2. Интенсив</h3>
+                </a>
+                <p class="item-content__author">
+                  <span>2k просмотров</span>
+                  <span>1 день назад</span>
+                  <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo
+                    Academy</a>
+                </p>
+              </div>
+            </div>
+            <div class="channel__slider-item">
+              <div class="item-video">
+                <a class="item-video__link" href="https://www.youtube.com/watch?v=5k2WutKjr2E" target="_blank">
+                  <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/5k2WutKjr2E/maxresdefault.webp" type="image/webp">
+                    <img class="item-video__img" src="https://i.ytimg.com/vi/5k2WutKjr2E/maxresdefault.jpg"
+                      alt="Вводная трансляция на курсе JavaScript 18.0">
+                  </picture>
+                </a>
+                <button class="item-video__btn" aria-label="Запустить видео">
+                  <svg viewBox="0 0 576 512">
+                    <path class="btn-shape"
+                      d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
+                    <path class="btn-icon"
+                      d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
+                  </svg>
+                </button>
+                <span class="item-video__time">1:52:29</span>
+              </div>
+              <div class="item-content">
+                <a class="item-content__link" href="https://www.youtube.com/watch?v=5k2WutKjr2E"
+                  title="Вводная трансляция на курсе JavaScript 18.0">
+                  <h3 class="item-content__title">Вводная трансляция на курсе JavaScript 18.0</h3>
+                </a>
+                <p class="item-content__author">
+                  <span>2k просмотров</span>
+                  <span>7 дней назад</span>
+                  <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo
+                    Academy</a>
+                </p>
+              </div>
+            </div>
+            <div class="channel__slider-item">
+              <div class="item-video">
+                <a class="item-video__link" href="https://www.youtube.com/watch?v=LaHXXKNiD3Q" target="_blank">
+                  <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/LaHXXKNiD3Q/maxresdefault.webp" type="image/webp">
+                    <img class="item-video__img" src="https://i.ytimg.com/vi/LaHXXKNiD3Q/maxresdefault.jpg"
+                      alt="Интенсив Вилберис JS. Финал. Ответы на вопросы">
+                  </picture>
+                </a>
+                <button class="item-video__btn" aria-label="Запустить видео">
+                  <svg viewBox="0 0 576 512">
+                    <path class="btn-shape"
+                      d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
+                    <path class="btn-icon"
+                      d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
+                  </svg>
+                </button>
+                <span class="item-video__time">3:46:06</span>
+              </div>
+              <div class="item-content">
+                <a class="item-content__link" href="https://www.youtube.com/watch?v=LaHXXKNiD3Q"
+                  title="Интенсив Вилберис JS. Финал. Ответы на вопросы">
+                  <h3 class="item-content__title">Интенсив Вилберис JS. Финал. Ответы на вопросы</h3>
+                </a>
+                <p class="item-content__author">
+                  <span>4k просмотров</span>
+                  <span>11 дней назад</span>
+                  <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo
+                    Academy</a>
+                </p>
+              </div>
+            </div>
+            <div class="channel__slider-item">
+              <div class="item-video">
+                <a class="item-video__link" href="https://www.youtube.com/watch?v=IjgzTFWBYHE" target="_blank">
+                  <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/IjgzTFWBYHE/maxresdefault.webp" type="image/webp">
+                    <img class="item-video__img" src="https://i.ytimg.com/vi/IjgzTFWBYHE/maxresdefault.jpg"
+                      alt="Интенсив Вилберис JS. День 2. Ответы на вопросы">
+                  </picture>
+                </a>
+                <button class="item-video__btn" aria-label="Запустить видео">
+                  <svg viewBox="0 0 576 512">
+                    <path class="btn-shape"
+                      d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
+                    <path class="btn-icon"
+                      d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
+                  </svg>
+                </button>
+                <span class="item-video__time">2:28:21</span>
+              </div>
+              <div class="item-content">
+                <a class="item-content__link" href="https://www.youtube.com/watch?v=IjgzTFWBYHE"
+                  title="Интенсив Вилберис JS. День 2. Ответы на вопросы">
+                  <h3 class="item-content__title">Интенсив Вилберис JS. День 2. Ответы на вопросы</h3>
+                </a>
+                <p class="item-content__author">
+                  <span>4k просмотров</span>
+                  <span>13 дней назад</span>
+                  <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo
+                    Academy</a>
+                </p>
+              </div>
+            </div>
+            <div class="channel__slider-item">
+              <div class="item-video">
+                <a class="item-video__link" href="https://www.youtube.com/watch?v=IjgzTFWBYHE" target="_blank">
+                  <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/IjgzTFWBYHE/maxresdefault.webp" type="image/webp">
+                    <img class="item-video__img" src="https://i.ytimg.com/vi/IjgzTFWBYHE/maxresdefault.jpg"
+                      alt="Интенсив Вилберис JS. День 2. Ответы на вопросы">
+                  </picture>
+                </a>
+                <button class="item-video__btn" aria-label="Запустить видео">
+                  <svg viewBox="0 0 576 512">
+                    <path class="btn-shape"
+                      d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
+                    <path class="btn-icon"
+                      d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
+                  </svg>
+                </button>
+                <span class="item-video__time">2:28:21</span>
+              </div>
+              <div class="item-content">
+                <a class="item-content__link" href="https://www.youtube.com/watch?v=IjgzTFWBYHE"
+                  title="Интенсив Вилберис JS. День 2. Ответы на вопросы">
+                  <h3 class="item-content__title">Интенсив Вилберис JS. День 2. Ответы на вопросы</h3>
+                </a>
+                <p class="item-content__author">
+                  <span>4k просмотров</span>
+                  <span>13 дней назад</span>
+                  <a class="author" href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg" target="_blank">Glo
+                    Academy</a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </article>
+      <article class="recommended">
+        <h3 class="visually-hidden">Рекомендуемые</h3>
+        <div class="channel__title">
+          <h4 class="channel__title-text">Рекомендуемые</h4>
+        </div>
+        <div class="r__slider">
+          <div class="r__slider-item">
+            <div class="item-video r__item-video">
+              <a class="item-video__link" href="https://www.youtube.com/watch?v=GS96Hvrx5wU">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/GS96Hvrx5wU/maxresdefault.webp" type="image/webp">
+                  <img class="item-video__img r-item-video__img"
+                    src="https://i.ytimg.com/vi/GS96Hvrx5wU/maxresdefault.jpg"
+                    alt="Вёрстка - это просто, если...">
+                </picture>
+              </a>
+              <button class="item-video__btn" aria-label="Запустить видео">
+                <svg viewBox="0 0 576 512">
+                  <path class="btn-shape"
+                    d="m549.655,124.083c-6.281,-23.65 -24.787,-42.276 -48.284,-48.597c-42.59,-11.486 -213.371,-11.486 -213.371,-11.486s-170.78,0 -213.371,11.486c-23.497,6.322 -42.003,24.947 -48.284,48.597c-11.412,42.867 -11.412,132.305 -11.412,132.305s0,89.438 11.412,132.305c6.281,23.65 24.787,41.5 48.284,47.821c42.591,11.486 213.371,11.486 213.371,11.486s170.78,0 213.371,-11.486c23.497,-6.321 42.003,-24.171 48.284,-47.821c11.412,-42.867 11.412,-132.305 11.412,-132.305s0,-89.438 -11.412,-132.305zm-317.51,213.508l0,-162.406l142.739,81.205l-142.739,81.201z" />
+                  <path class="btn-icon"
+                    d="m231.95057,175.50609l144.09867,80.78831l-143.70021,81.97708l-0.39846,-162.76539z" />
+                </svg>
+              </button>
+              <span class="item-video__time">5:27</span>
+            </div>
+            <div class="item-content">
+              <a class="item-content__link" href="https://www.youtube.com/watch?v=GS96Hvrx5wU"
+                title="Вёрстка - это просто, если..." target="_blank">
+                <h5 class="item-content__title">Вёрстка - это просто, если...</h5>
+              </a>
+              <div class="r-author">
+                <p class="item-content__author">
+                  <span>1k просмотров</span>
+                  <span>3 месяца назад</span>
                   <a class="author-link" href="https://www.youtube.com/channel/UCn-P_F0tfY21cfnkyv2lsRQ"
                     target="_blank">Просто: разработка</a>
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -604,7 +685,8 @@
                 href="https://www.youtube.com/watch?v=q1ehklM_L5c&list=PLi9xR0ajr4Kzn_sU3326us7Gg_GPjSBqV&index=15&ab">
                 <picture>
                   <source srcset="https://i.ytimg.com/vi_webp/q1ehklM_L5c/maxresdefault.webp" type="image/webp">
-                  <img class="item-video__img" src="https://i.ytimg.com/vi/q1ehklM_L5c/maxresdefault.jpg"
+                  <img class="item-video__img food-item-video__img"
+                    src="https://i.ytimg.com/vi/q1ehklM_L5c/maxresdefault.jpg"
                     alt="20 весёлых десертных рецептов">
                 </picture>
               </a>
@@ -766,7 +848,7 @@
           </div>
         </div>
       </article>
-    </section>-->
+    </section>
   </main>
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
