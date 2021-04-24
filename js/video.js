@@ -12,7 +12,14 @@ function setupVideo(video) {
     let button = video.querySelector('.item-video__btn');
     let id = parseMediaURL(media);
 
-    video.addEventListener('click', () => {
+    // video.addEventListener('click', () => {
+    //     let iframe = createIframe(id);
+
+    //     link.remove();
+    //     button.remove();
+    //     video.appendChild(iframe);
+    // });
+    video.addEventListener('click', function() {
         let iframe = createIframe(id);
 
         link.remove();
